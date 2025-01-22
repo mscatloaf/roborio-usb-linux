@@ -1,9 +1,10 @@
 # roborio-usb-linux
 
-This program allows you to connect a roborio to a linux computer over usb using simple-dhcpd
+This bash script allows you to connect a roborio to a linux computer over usb using simple-dhcpd
 https://github.com/javier-lopez/learn/blob/master/python/tools/simple-dhcpd
 
 Its written for personal use, so don't expect any documentation / support
+
 ```
 configure() {
 	DEVICE=$(ip a | grep enp0 | sed -e 's/.*: \(.*\):.*/\1/')
