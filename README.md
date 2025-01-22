@@ -4,8 +4,8 @@ This program allows you to connect a roborio to a linux computer over usb using 
 https://github.com/javier-lopez/learn/blob/master/python/tools/simple-dhcpd
 
 Its written for personal use, so don't expect any documentation / support
-
-`configure() {
+```
+configure() {
 	DEVICE=$(ip a | grep enp0 | sed -e 's/.*: \(.*\):.*/\1/')
 	echo "Device is $DEVICE"
 	ip addr add 172.22.11.1/24 dev $DEVICE
@@ -25,4 +25,4 @@ do
 	fi
 	sleep 1
 done
-`
+```
